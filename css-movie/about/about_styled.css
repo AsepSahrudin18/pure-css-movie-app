@@ -1,0 +1,139 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about_container{
+    padding: 2rem;
+}
+
+.about_img_none, .about_img_display{
+    width: 100%;
+    height: auto;
+}
+
+.about_img_none{
+    display: none;
+}
+
+.about_title_left{
+    color: #06D6A0;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    
+    font-size: 2.3rem;
+}
+
+.about_contact_left{
+    margin-bottom: 0.6rem;
+    color: #64748B;
+}
+
+.about_item{
+    color: #64748b;
+    padding: 0.3rem 0;
+}
+
+.hire_button{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #06D6A0;
+    max-width: 110px;
+}
+
+.about_left{
+    margin-bottom: 2rem;
+}
+
+.about_icon{
+    color: #06D6A0;
+    font-size: 16px;
+}
+
+.about_left{
+    margin-bottom: 2rem;
+}
+
+.right_box_content{
+    display: none;
+}
+
+.left_box_content{
+    display: flex;
+    flex-direction: column;
+}
+
+/* medium screen */
+@media screen and (min-width: 768px) {
+    .about_img_none{
+        display: flex;
+    }
+
+    .about_img_display{
+        display: none;
+    }
+
+    .about_container{
+        flex-direction: row;
+        display: flex;
+    }
+
+    .about_left{
+        flex-basis: 50%;
+        padding: 2.5rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_right{
+        flex-basis: 50%;
+        padding: 2.5rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left_box_content{
+        display: none;
+    }
+    
+    .right_box_content{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Large screen */
+    @media screen and (min-width: 992px) {
+        .about_left{
+            padding: 5rem;
+            padding-left: 8rem;
+        }
+
+        .about_right{
+            padding: 5rem;
+        }
+    }
+    /* X-Large */
+    @media screen and (min-width: 1440px) {
+        .about_container{
+            padding: 10rem;
+        }
+        
+        .about_right{
+            padding: 5rem;
+        }
+    }
+}
